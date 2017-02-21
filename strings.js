@@ -1,17 +1,40 @@
-function reversal() {
+var validChar = /[a-zA-z]/;
 
-}
+var input = document.getElementById("userData");
 
-function alphabits() {
+var button = document.getElementById("returnInput");
+button.addEventListener("click", validate);
+button.addEventListener("keypress", validate);
 
-}
+window.addEventListener("keyup",
+	function(e) {
+	if (e.keyCode == 13) {
+    document.getElementById("returnInput").click(testString);
+  }
+});
 
-function palindrome() {
+	manipulateString.userData = document.getElementById("userData").value;
 
-}
+function validate() {
+    if (/""/.test(input)); {
+        alert("Please enter character");
+    }
 
-var testString = "";
-reversal(testString);
-alphabits(testString);
-palindrome(testString);
+    if (/^[a-zA-Z]+$/.test(input)); {
+    	alert("Only accepts letters")
+    }
+};
+
+
+// function alphabits() {
+
+// }
+
+// function palindrome() {
+
+// }
+
+// function palindrome() {
+	
+// }
 
