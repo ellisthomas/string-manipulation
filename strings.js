@@ -12,14 +12,19 @@ document.onkeydown = function() {
 
 
 function validate(e) {
-    if (input == ""); {
-        alert("Please enter character");
-    }
+    // if (input == "") {
+    //     alert("INPUT PLEASE!");
+    //     input.focus();
+    // }
+    // if (!/^[a-z]*$/g.test(input)) {
+    //     alert("We only accept letters");
+    //     input.focus();
+    // }
+    // else {
+        manipulateString(e);
+    // }
+};
 
-//     if (/^[a-zA-Z]+$/.test(input)); {
-//         alert("Only accepts letters")
-//     }
-// };
 
 
 function reversal(e) {
